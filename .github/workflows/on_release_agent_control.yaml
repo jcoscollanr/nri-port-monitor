@@ -20,6 +20,7 @@ jobs:
     with:
       tag: ${{ github.event.release.tag_name || inputs.tag }}
       source_repo: "newrelic/nri-port-monitor"
+      metadata_git_ref: "master"
       agent_type: NRIPortMonitor
       display_name: "Port Monitor"
       monitoring_type: "INFRA"
